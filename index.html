@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedAlert</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img class="logo" src="./img/logo.png" alt="logo">
+                <h1 class="logo-name"class="d-flex " >Med<font>Alert</font></h1>
+                <!-- <a class="navbar-brand" href="#">Logo</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto d-flex justify-content-end col-6 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="   color: #ba0e04;
+                            border-bottom: 1px solid red;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Doctor Consultant</a></li>
+                                <li><a class="dropdown-item" href="#">Home Healthcare</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ambulance Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-primary "> Book Now</button>
+                        <button class="btn btn-secondary mx-3"> Call Now</button>
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <!-- slider section -->
+    <section class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/newBannerImg (1).jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-danger font-weight-bold">Air Ambulance</h5>
+                        <p class="text-success font-weight-bold"> This type of ambulance is used to transport patients from one city to another for treatment</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/newBannerImg (2).jpg" class="d-block w-100" alt="..." style="height: 80%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-danger font-weight-bold">Patient Transport Vehicle</h5>
+                        <p class="text-success font-weight-bold">This ambulance is used to take the patient from one place to another.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/newBannerImg (3).jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-danger font-weight-bold">Neonatal Ambulance</h5>
+                        <p class="text-success font-weight-bold">An ambulance used for newborn babies is called a neonatal ambulance.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ================================= hero -->
+    <section class=" container-xxl my-3 h-100">
+<div class="col-md-12 col-lg-12 hero-section">
+
+    <div class="card col-md-4 text-center">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Book Ambulance</h5>
+            <h6 class="card-subtitle mb-2 text-secondary">Any case of emergency for medical services </h6>
+            <p class="card-text">Help / Rescues the Patient in case of the Emergency situation by doing just a click. MedAlert Ambulance comes right in front of the door for help.</p>
+            <a href="#" class="card-link btn btn-sm font-weight-bold text-white px-1 bg-danger">Book Now</a>
+            <a href="#" class="card-link btn btn-sm font-weight-bold text-white px-1 bg-success">Call Now</a>
+        </div>
+    </div>
+
+</div>
+    </section>
+
+
+
+    <!-- Our services -->
+    <section class="container">
+        <div class="container">
+            <div class="text-center mb-2-8 mb-lg-6">
+                <h2 class="display-18 display-md-16 display-lg-14 font-weight-700">Why choose <strong
+                        class="text-primary font-weight-700">Us</strong></h2>
+                <span>The trusted source for why choose us</span>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-lg-4 mb-2-9 mb-sm-0">
+                    <div class="pr-md-3">
+                        <div class="text-center text-sm-right mb-2-9">
+                            <div class="mb-4">
+                                <img src="https://img.freepik.com/free-vector/doctor-examining-patient-clinic-illustrated_23-2148856559.jpg?w=1060&t=st=1673729345~exp=1673729945~hmac=3d16614c5222b4c752a7f110fa84591322cea8d410272a6f3487c8258ce057b5" alt="..." 
+                                    class="rounded-circle w-25 h-25">
+                            </div>
+                            <h4 class="sub-info">Patient first policy</h4>
+                            <p class="display-30 mb-0">MedAlert Are provide patient frist policy  we know the setuation of emerency.</p>
+                        </div> <hr>
+                        <div class="text-center text-sm-right">
+                            <div class="mb-4">
+                                <img src="https://images.pexels.com/photos/9424455/pexels-photo-9424455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..."
+                                    class="rounded-circle" width="80" height="80">
+                            </div>
+                            <h4 class="sub-info">Emergency assistance time of 15 minutes or less
+                            </h4>
+                            <p class="display-30 mb-0">MedAlert Are provide Emergency assistance time of 15 minutes or less.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="why-choose-center-image">
+                        <img src="./img/ambulance 2.jpeg" alt="https://www.bootdey.com/image/350x350/FF7F50/000000" class="rounded-circle"  style=" height:350px; width:350px; ">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="pl-md-3">
+                        <div class="text-center text-sm-left mb-2-9">
+                            <div class="mb-4">
+                                <img src="https://images.pexels.com/photos/8867475/pexels-photo-8867475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="https://www.bootdey.com/image/80x80/8A2BE2/000000"
+                                    class="rounded-circle"  width="80" height="80">
+                            </div>
+                            <h4 class="sub-info">24/7 Support</h4>
+                            <p class="display-30 mb-0">MedAlert Are provide 24/7 Support</p>
+                        </div>
+<hr>
+                        <div class="text-center text-sm-left">
+                            <div class="mb-4">
+                                <img src="https://images.pexels.com/photos/6520165/pexels-photo-6520165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="https://www.bootdey.com/image/80x80/8A2BE2/000000"
+                                    class="rounded-circle" width="80" height="80">
+                            </div>
+                            <h4 class="sub-info">Biggest fleet of ambulances across Bhopal</h4>
+                            <p class="display-30 mb-0">MedAlert are the Biggest fleet of ambulances across Bhopal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our featues  -->
+    <section class="container-sm">
+        <!-- <link rel="stylesheet" type="text/css"
+            href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> -->
+        <div class="container bootstrap snippets bootdey">
+            <section id="content" class="current">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h2>All about Mobile Application</h2>
+                            <h2 style="font-size: 60px;line-height: 60px;margin-bottom: 20px;font-weight: 900;">Download
+                                <span class="highlight">Mybrisk Strike</span></h2>
+                            <p>Its a third party mobile app avilable on play store.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-offset-1 col-sm-12 col-md-12 col-lg-12">
+                            <div class="features-list">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="feature-block bootdey" style="visibility: visible;">
+                                            <div class="ico fa-brands fa-google-play"></div> <i class=""></i>
+                                            <div class="name">
+                                              frist Step
+                                            </div>
+                                            <div class="text">Download our App </div>
+                                            <div class="more">
+                                                <!-- <a href="#" class="btn btn-default btn-sm">Read more</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="feature-block bootdey" style="visibility: visible;">
+                                            <div class="ico fa-solid fa-magnifying-glass"></div>
+                                            <div class="name">
+                                                Second step
+                                            </div>
+                                            <div class="text"> Goto App search box and search MedAlert </div>
+                                            <div class="more">
+                                                <!-- <a href="#" class="btn btn-default btn-sm">Read more</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="feature-block bootdey" style="visibility: visible;">
+                                            <div class="ico fa fa-gift"></div>
+                                            <div class="name">
+                                                Fourth Steps
+                                            </div>
+                                            <div class="text">Click and open medAlert interface </div>
+                                            <div class="more">
+                                                <!-- <a href="#" class="btn btn-default btn-sm">Read more</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="feature-block bootdey" style="visibility: visible;">
+                                            <div class="ico fa fa-cubes"></div>
+                                            <div class="name">
+                                               Fifth Steps
+                                            </div>
+                                            <div class="text"> Click <button class="btn text-primary bg-white border-2">Book an Ambulance </button> and book </div>
+                                            <div class="more">
+                                                <!-- <a href="#" class="btn btn-default btn-sm">Read more</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="feature-block bootdey" style="visibility: visible;">
+                                            <div class="ico fa-solid fa-list-check"></div>
+                                            <div class="name">
+                                                last steps
+                                            </div>
+                                            <div class="text">fill your informations and your Ambulance will come your door steps with in few minuts </div>
+                                            <div class="more">
+                                                <!-- <a href="#" class="btn btn-default btn-sm">Read more</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="feature-block bootdey" style="visibility: visible;">
+                                            <div class="ico fa-brands fa-internet-explorer"></div>
+                                            <div class="name">
+                                               Book in Website
+                                            </div>
+                                            <div class="text">This services avilable soon as possible  </div>
+                                            <div class="more">
+                                                <!-- <a href="#" class="btn btn-default btn-sm">Read more</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+
+    <!--=========================== Insights -->
+    <section class="container-fluid h-50">
+
+        <h4 class="text-dark text-center">Insights</h4>
+        <section class="counter">
+            <div class="container">
+                <div class="counter__content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__item__text">
+                                    <i class="icon fas fa-project-diagram fa-3x"></i>
+                                    <h2 class="counter_num">230+</h2>
+                                    <p>Compled Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="counter__item second__item">
+                                <div class="counter__item__text">
+                                    <i class="icon far fa-smile-beam fa-3x"></i>
+                                    <h2 class="counter_num">1068+</h2>
+                                    <p>Happy clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="counter__item third__item">
+                                <div class="counter__item__text">
+                                    <i class="icon fas fa-chalkboard-teacher fa-3x"></i>
+                                    <h2 class="counter_num">230+</h2>
+                                    <p>Perspective clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="counter__item four__item">
+                                <div class="counter__item__text">
+                                    <i class="icon fas fa-list-alt fa-3x"></i>
+                                    <h2 class="counter_num">230+</h2>
+                                    <p>Compled Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- News Sections -->
+    <section class="container my-3">
+        <div class="  bootstrap row snippets bootdey">
+            <div class=" col-sm-4">
+                <div class="widget single-news">
+                    <div class="image">
+                        <img src="https://images.hindustantimes.com/img/2023/01/16/550x309/108-Ambulance-Employees-Association--Punjab-staged_1673893933516.jpg" class="img-responsive" >
+                        <span class="gradient"></span>
+                    </div>
+                    <div class="details">
+                        <div class="category"><a href="https://www.hindustantimes.com/cities/chandigarh-news/108-ambulance-service-off-road-employees-strike-continues-operator-to-hire-new-staff-101673893938976.html" >News</a></div>
+                        <h3><a href="">108 ambulance service off road: Employees’ strike continues, operator to hire new staff</a></h3>
+                        <time>Hindustan Times, 18 Jan</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget single-news">
+                    <div class="image">
+                        <img src="https://c.ndtvimg.com/2022-11/e5ojvqj_rajasthan-ambulance_120x90_26_November_22.jpg" class="img-responsive" >
+                        <span class="gradient"></span>
+                    </div>
+                    <div class="details">
+                        <div class="category"><a href="https://www.ndtv.com/india-news/patient-dies-after-ambulance-runs-out-of-fuel-in-rajasthan-report-3555688" >News</a></div>
+                        <h3><a href="">Patient Dies After Ambulance Runs Out Of Fuel In Rajasthan: Report
+                            Patient Dies After Ambulance Runs Out Of Fuel In Rajasthan: Report</a></h3>
+                        <time>NDTV News, 18 August</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget single-news">
+                    <div class="image">
+                        <img src="https://images.news18.com/ibnkhabar/uploads/2022/11/Rajgarh-ambulance-service.jpg?im=FitAndFill,width=480,aspect=fit,type=normal" class="img-responsive">
+                        <span class="gradient"></span>
+                    </div>
+                    <div class="details">
+                        <div class="category"><a href="https://hindi.news18.com/news/punjab/chandigarh-punjab-punjab-ambulance-service-employees-strike-continues-cm-bhagwant-mann-meeting-may-be-held-today-5214239.html" >News</a></div>
+                        <h3><a href="">Punjab: चरमरा सकती हैं सूबे में स्‍वास्‍थ्‍य सेवाएं, मंत्री संग बेनतीजा रही हड़ताली एंबुलेंसकर्मि‍यों की मीट‍िंग</a></h3>
+                        <time>News18, 19 Jan</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our Clients -->
+
+    <!-- contact section  -->
+    <section class="section gray-bg" id="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h2>Get In Touch</h2>
+                        <p>Our team try to coneect back within few minuts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-md-7 col-lg-8 m-15px-tb">
+                    <div class="contact-form">
+                         <form action="/" method="post" class="contactform contact_form" id="contact_form">
+                            <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
+                            <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="name" type="text" placeholder="Full Name" class="form-control"> 
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="email" type="text" placeholder="Email Address" class="form-control">  
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input id="subject" type="text" placeholder="Subject" class="form-control"> 
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="message" placeholder="Message" class="form-control" rows="3"></textarea> 
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="send">
+                                        <a id="send_message" class="px-btn theme" href="#"><span>Submit now</span> <i class="arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 m-15px-tb">
+                    <div class="contact-name">
+                        <h5>Mail</h5>
+                        <p>info@medalert.com</p>
+                    </div>
+                    <div class="contact-name">
+                        <h5>Working location</h5>
+                        <p>Bhopal <br>Madhya Pradesh</p>
+                    </div>
+                    <div class="contact-name">
+                        <h5>Phone</h5>
+                        <p>+91 9752 265 048</p>
+                    </div>
+                    <div class="social-share nav">
+                        <a class="dribbble" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="behance" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="linkedin" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer class="bg-dark-gradient footer">
+<!-- 
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-border-bottom pb-6 mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-3">
+                            <h4 class="text-white">
+                                Sign up to Get Latest Updates
+                            </h4>
+                        </div>
+                        <div class="col-lg-4 col-xl-6">
+                            <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                                <input type="email" class="form-control rounded-0 border-0"
+                                    placeholder="you@yoursite.com">
+                                <button class="btn btn-secondary rounded-0 flex-shrink-0"
+                                    type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="text-lg-end text-white">
+                                <span class="h6">Call Us On</span><br>
+                                <span class="h3">1-800-222-000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 my-4">
+                        <div class="mb-4">
+                            <img src="static/img/logo-light.svg" title="" alt="">
+                        </div>
+                        <div class="text-white-65 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod.</div>
+                        <div class="nav footer-socila-icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2 my-4">
+                        <h5 class="text-white h6 mb-4">Customer</h5>
+                        <ul class="list-unstyled white-link footer-links">
+                            <li>
+                                <a href="#">Get Corpo</a>
+                            </li>
+                            <li>
+                                <a href="#">Documentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Help center</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-2 my-4">
+                        <h5 class="text-white h6 mb-4">Product</h5>
+                        <ul class="list-unstyled white-link footer-links">
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Join our team</a>
+                            </li>
+                            <li>
+                                <a href="#">Elements</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-2 my-4">
+                        <h5 class="text-white h6 mb-4">Company</h5>
+                        <ul class="list-unstyled white-link footer-links">
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">Legal &amp; Security</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="#">We're hiring!</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 my-4">
+                        <h5 class="text-white h6 mb-4">Company</h5>
+                        <div class="white-link">
+                            <div class="d-flex pb-3">
+                                <div class="avatar avatar-lg rounded">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
+                                </div>
+                                <div class="col ps-3">
+                                    <small class="text-white-65">29 March 2021</small>
+                                    <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language
+                                            Sample Blog Post Styling</a></h6>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="avatar avatar-lg rounded">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" title="" alt="">
+                                </div>
+                                <div class="col ps-3">
+                                    <small class="text-white-65">29 March 2021</small>
+                                    <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language
+                                            Sample Blog Post Styling</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
+        <div class="footer-bottom footer-border-top light py-3">
+            <div class="container text-center">
+                <p class="m-0">© copyright 2023 <a href="#" class="text-reset">MedAlert Technical Teams </a>
+                    <font>all right reserved</font>
+                </p>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+
+<!-- ========================js file ======================= -->
+<script src="./js/main.js"></script>
+<!-- <script src="./js/include.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+//    document.getElementsByClassName("sub-info")[0].style.color="red";
+document.querySelector("btn").classList.add("text-secondary");
+</script>
+</html>
