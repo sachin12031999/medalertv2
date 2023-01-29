@@ -153,6 +153,17 @@ a {
 }
 
 /* ================extra css  */
+.container #header {
+    width: 100%;
+    height: 100px;
+    background-color: #2a9aac;
+    z-index: 9999;
+    position: fixed;
+    top: -100px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 14%), 0 4px 8px rgb(0 0 0 / 28%);
+    transition: 1.5s;
+}
+
 .container #header #header-in ul a li {
     font-size: 16px !important;
     transition: color 1s;
@@ -195,4 +206,150 @@ a {
     color: #2a9aac !important;
     background: #f1f2f9 !important;
     border: 1px solid #2a9aac !important;
+}
+
+/* navbar  */
+.container #header #header-in i {
+    position: absolute;
+    left: 76vw;
+    top: 40%;
+    font-size: 26px;
+    /* display: none; */
+}
+.container .con-type .underlines .circle {
+    width: 20px;
+    height: 20px;
+    background: rgb(222, 26, 30);
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+/* ================process of booking =============*/
+.sectionpadding {
+    padding: 40px 0;
+}
+.mycontainer {
+    max-width: 1400px;
+    width: 87%;
+    margin: auto;
+    position: relative;
+    z-index: 999;
+}
+.heading {
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading2 {
+    font: normal normal 500 30px/34px Poppins;
+    letter-spacing: 0;
+    color: #413d3d;
+    text-transform: uppercase;
+}
+.heading2 span {
+    color: #f12323;
+}
+.process-ambulance-box .stepsectionwrapper {
+    width: 100%;
+}
+.stepsectionwrapper .stepboxwrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepboxwrapper {
+    position: relative;
+}
+.stepgrid , .stepgrids {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    padding-right: 7px;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.stepiconbox {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.stepiconbox .processicon {
+    width: 80px
+px
+;
+    height: 80px;
+    background: #fff;
+    border: 4px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+.stepiconbox .processicon img {
+    max-width: 45px;
+}
+.stepgrid:after {
+    content: "\f0a9";
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    font-family: FontAwesome;
+    line-height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 30px;
+    height: 25px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    
+    .callus{
+        display: grid;
+    }
+    .container #footer #footin #action-buts #imgs {
+        bottom: 32px;
+        position: relative;
+        height: 50%;
+    }
+    .stepsectionwrapper .stepboxwrapper{
+        display: inline;
+    }
+    .stepgrid:after {
+        content: "\f149";
+        position: absolute;
+        top: 25%;
+        left: 100%;
+        transform: translate(-50%,-50%);
+        font-family: FontAwesome;
+        line-height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        color: #000;
+        font-size: 30px;
+        height: 25px;
+    }
 }
